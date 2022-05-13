@@ -160,8 +160,7 @@ export class DataProvider extends Component {
           getTotal,
         }}
       >
-        {" "}
-        {this.props.children}{" "}
+        {this.props.children}
       </DataContext.Provider>
     );
   }
