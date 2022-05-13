@@ -20,11 +20,8 @@ export class Header extends Component {
   render() {
     const { toggle } = this.state;
     const { cart } = this.context;
-    {
-      if (cart.length > 0) {
-        var redDot = <span>{cart.length}</span>;
-      }
-    }
+    const redDot = cart.length > 0 ? <span>{cart.length}</span> : <></>;
+
     return (
       <header>
         <div className="menu" onClick={this.menuToggle}>
